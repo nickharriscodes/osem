@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class RenameConferenceIdToProgramIdInEventsTracksDifficultyLevels < ActiveRecord::Migration
+class RenameConferenceIdToProgramIdInEventsTracksDifficultyLevels < ActiveRecord::Migration[5.0]
   class TempConference < ActiveRecord::Base
     self.table_name = 'conferences'
   end

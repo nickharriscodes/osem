@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddAttendingWithPartnerToQuestions < ActiveRecord::Migration
+class AddAttendingWithPartnerToQuestions < ActiveRecord::Migration[5.0]
   class TempRegistration < ActiveRecord::Base
     self.table_name = 'registrations'
 

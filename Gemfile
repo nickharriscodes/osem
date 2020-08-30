@@ -219,6 +219,9 @@ gem 'skylight'
 # CVE-2017-9049, CVE-2017-9050
 gem 'nokogiri', '>= 1.8.1'
 
+gem 'execjs'
+gem 'mini_racer' 
+
 # memcached binary connector
 gem 'dalli'
 
@@ -250,7 +253,7 @@ group :test do
   gem 'transactional_capybara'
   gem 'webdrivers'
   # for measuring test coverage
-  gem 'codecov', require: false
+  # gem 'codecov', require: false
   # for describing models
   gem 'shoulda-matchers', require: false
   # for stubing/mocking models

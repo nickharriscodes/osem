@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddTimestampsToTickets < ActiveRecord::Migration[5.0]
+class AddTimestampsToTickets < ActiveRecord::Migration[5.0][5.0]
   def up
     add_column :tickets, :created_at, :datetime
     add_column :tickets, :updated_at, :datetime

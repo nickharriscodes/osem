@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddCommentsCountToEvents < ActiveRecord::Migration
+class AddCommentsCountToEvents < ActiveRecord::Migration[5.0]
   def change
     add_column :events, :comments_count, :integer, default: 0, null: false
 

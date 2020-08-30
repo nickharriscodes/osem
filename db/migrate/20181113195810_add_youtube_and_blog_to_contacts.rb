@@ -1,4 +1,4 @@
-class AddYoutubeAndBlogToContacts < ActiveRecord::Migration[5.0]
+class AddYoutubeAndBlogToContacts < ActiveRecord::Migration[5.0][5.0]
   def change
     add_column :contacts, :youtube, :string
     add_column :contacts, :blog, :string

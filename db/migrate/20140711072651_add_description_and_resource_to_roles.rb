@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddDescriptionAndResourceToRoles < ActiveRecord::Migration
+class AddDescriptionAndResourceToRoles < ActiveRecord::Migration[5.0]
   def change
     add_column :roles, :description, :string
     add_reference :roles, :resource, polymorphic: true

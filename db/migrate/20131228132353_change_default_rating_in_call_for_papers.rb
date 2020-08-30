@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class ChangeDefaultRatingInCallForPapers < ActiveRecord::Migration
+class ChangeDefaultRatingInCallForPapers < ActiveRecord::Migration[5.0]
   def up
     change_column :call_for_papers, :rating, :integer, default: 3
   end

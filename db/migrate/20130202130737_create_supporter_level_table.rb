@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateSupporterLevelTable < ActiveRecord::Migration
+class CreateSupporterLevelTable < ActiveRecord::Migration[5.0]
   def up
     create_table :supporter_levels do |t|
       t.references :conference

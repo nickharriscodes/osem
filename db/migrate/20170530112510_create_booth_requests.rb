@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateBoothRequests < ActiveRecord::Migration
+class CreateBoothRequests < ActiveRecord::Migration[5.0]
   def change
     create_table :booth_requests do |t|
       t.references :booth, index: true, foreign_key: true

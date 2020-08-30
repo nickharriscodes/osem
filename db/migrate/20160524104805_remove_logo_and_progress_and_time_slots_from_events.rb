@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class RemoveLogoAndProgressAndTimeSlotsFromEvents < ActiveRecord::Migration
+class RemoveLogoAndProgressAndTimeSlotsFromEvents < ActiveRecord::Migration[5.0]
   def up
     remove_column :events, :logo_file_name
     remove_column :events, :logo_updated_at

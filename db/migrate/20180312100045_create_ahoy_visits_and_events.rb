@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateAhoyVisitsAndEvents < ActiveRecord::Migration[5.0]
+class CreateAhoyVisitsAndEvents < ActiveRecord::Migration[5.0][5.0]
   def change
     add_column :visits, :visit_token, :string
     add_column :visits, :visitor_token, :string

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AssignUsersToEvents < ActiveRecord::Migration
+class AssignUsersToEvents < ActiveRecord::Migration[5.0]
   class TempEvent < ActiveRecord::Base
     self.table_name = 'events'
   end

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class MigrateRolesForCancancan < ActiveRecord::Migration
+class MigrateRolesForCancancan < ActiveRecord::Migration[5.0]
   def up
     # Store the number of existing roles
     old_roles = Role.count

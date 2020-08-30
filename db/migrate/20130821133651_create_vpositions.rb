@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateVpositions < ActiveRecord::Migration
+class CreateVpositions < ActiveRecord::Migration[5.0]
   def up
     create_table :vpositions do |t|
       t.references :conference

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class RemoveCfpAndRegBooleansFromConferences < ActiveRecord::Migration
+class RemoveCfpAndRegBooleansFromConferences < ActiveRecord::Migration[5.0]
   def up
     remove_column :conferences, :cfp_open
     remove_column :conferences, :registration_open

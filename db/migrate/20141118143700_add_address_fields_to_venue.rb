@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddAddressFieldsToVenue < ActiveRecord::Migration
+class AddAddressFieldsToVenue < ActiveRecord::Migration[5.0]
   def change
     add_column :venues, :street, :string
     add_column :venues, :postalcode, :integer

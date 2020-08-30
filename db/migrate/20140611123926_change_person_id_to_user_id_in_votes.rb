@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class ChangePersonIdToUserIdInVotes < ActiveRecord::Migration
+class ChangePersonIdToUserIdInVotes < ActiveRecord::Migration[5.0]
   class TempPerson < ActiveRecord::Base
     self.table_name = 'people'
   end

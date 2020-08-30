@@ -1,4 +1,4 @@
-class UserEmailPublicDefaultsToFalse < ActiveRecord::Migration[5.0]
+class UserEmailPublicDefaultsToFalse < ActiveRecord::Migration[5.0][5.0]
   def up
     change_column_default :users, :email_public, false
   end

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateRegistrationPeriods < ActiveRecord::Migration
+class CreateRegistrationPeriods < ActiveRecord::Migration[5.0]
   def up
     create_table :registration_periods do |t|
       t.integer :conference_id

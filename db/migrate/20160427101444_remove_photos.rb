@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class RemovePhotos < ActiveRecord::Migration
+class RemovePhotos < ActiveRecord::Migration[5.0]
   def change
     drop_table :photos do |t|
       t.text :description

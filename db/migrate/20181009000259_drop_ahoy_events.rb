@@ -1,4 +1,4 @@
-class DropAhoyEvents < ActiveRecord::Migration[5.0]
+class DropAhoyEvents < ActiveRecord::Migration[5.0][5.0]
   def up
     remove_index :visits, [:visit_token]
     remove_index :ahoy_events, [:name, :time]

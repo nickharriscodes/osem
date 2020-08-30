@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateDifficultyLevels < ActiveRecord::Migration
+class CreateDifficultyLevels < ActiveRecord::Migration[5.0]
   def change
     create_table :difficulty_levels do |t|
       t.references :conference

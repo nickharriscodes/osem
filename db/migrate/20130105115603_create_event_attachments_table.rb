@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateEventAttachmentsTable < ActiveRecord::Migration
+class CreateEventAttachmentsTable < ActiveRecord::Migration[5.0]
   def up
     create_table :event_attachments do |t|
       t.references :event

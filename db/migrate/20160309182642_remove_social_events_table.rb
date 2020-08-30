@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class RemoveSocialEventsTable < ActiveRecord::Migration
+class RemoveSocialEventsTable < ActiveRecord::Migration[5.0]
   class TempConference < ActiveRecord::Base
     self.table_name = 'conferences'
 

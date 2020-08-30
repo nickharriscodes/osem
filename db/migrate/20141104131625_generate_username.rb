@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class GenerateUsername < ActiveRecord::Migration
+class GenerateUsername < ActiveRecord::Migration[5.0]
   class TempUser < ActiveRecord::Base
     self.table_name = 'users'
   end

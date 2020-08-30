@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddWeekToRegistration < ActiveRecord::Migration
+class AddWeekToRegistration < ActiveRecord::Migration[5.0]
   class Registration < ActiveRecord::Base
   end
 

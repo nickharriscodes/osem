@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class MoveConferenceMediaToCommercial < ActiveRecord::Migration
+class MoveConferenceMediaToCommercial < ActiveRecord::Migration[5.0]
   class TempConference < ActiveRecord::Base
     self.table_name = 'conferences'
   end

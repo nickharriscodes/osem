@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateSplashpages < ActiveRecord::Migration
+class CreateSplashpages < ActiveRecord::Migration[5.0]
   def change
     create_table :splashpages do |t|
       t.integer :conference_id

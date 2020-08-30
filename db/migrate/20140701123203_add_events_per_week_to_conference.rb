@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class AddEventsPerWeekToConference < ActiveRecord::Migration
+class AddEventsPerWeekToConference < ActiveRecord::Migration[5.0]
   class TempVersion < ActiveRecord::Base
     self.table_name = 'versions'
     serialize :object_changes, HashWithIndifferentAccess
